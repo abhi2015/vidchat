@@ -43,8 +43,8 @@
     var video_out = PUBNUB.$('video-display');
     var phone = window.phone = PHONE({
         number: my_number.number, // listener
-        publish_key: 'pub-c-bf7bba68-a1f7-40f1-b990-bd1c6acb18d5',
-        subscribe_key: 'sub-c-8626f408-b673-11e4-b68c-0619f8945a4f',
+        publish_key: 'pub-c-7e8374fa-c696-4180-b7fc-0094ea59e13e',
+        subscribe_key: 'sub-c-ee36f868-bd71-11e4-938c-0619f8945a4f',
         ssl: true
     });
 
@@ -80,11 +80,11 @@
         document.getElementById("container-float").style.visibility = "visible";
         document.getElementById("main").style.visibility = "hidden";
         if(usertype=="assistant"){
-        user.innerHTML = ',There are no Pending Calls!!';
+        user.innerHTML = ',there are no pending calls.';
         document.getElementById("dial").style.visibility = "hidden";
     }
     else if(usertype=="customer"){
-        user.innerHTML = ',How can I help u?';
+        user.innerHTML = ',how can I help you?';
         document.getElementById("dial").style.visibility = "visible";
     }
     else{
@@ -108,6 +108,7 @@
         document.getElementById("container-float").style.visibility = "hidden";
         document.getElementById("main").style.visibility = "hidden";
         document.getElementById("container-loading").style.visibility = "visible";
+        document.getElementById("dial").style.visibility = "hidden";
 
     }
 
