@@ -43,8 +43,8 @@
     var video_out = PUBNUB.$('video-display');
     var phone = window.phone = PHONE({
         number: my_number.number, // listener
-        publish_key: 'pub-c-bf7bba68-a1f7-40f1-b990-bd1c6acb18d5',
-        subscribe_key: 'sub-c-8626f408-b673-11e4-b68c-0619f8945a4f',
+        publish_key: 'pub-c-7e8374fa-c696-4180-b7fc-0094ea59e13e',
+        subscribe_key: 'sub-c-ee36f868-bd71-11e4-938c-0619f8945a4f',
         ssl: true
     });
 
