@@ -4,11 +4,23 @@
     var urlargs = urlparams();
     var my_number = PUBNUB.$('my-number');
     var my_name = PUBNUB.$('display-text');
+    var user = PUBNUB.$('user');
     my_number.number = urlargs[1];
     my_number.innerHTML = 'Hi ' + urlargs[2];
     my_name.innerHTML = 'Hi ' + urlargs[2];
     var usertype = urlargs[3];
+    if(usertype=="assistant"){
+        user.innerHTML = ',there are no pending calls.';
+        document.getElementById("dial").style.visibility = "hidden";
+    }
+    else if(usertype=="customer"){
+        user.innerHTML = ',how can I help you?';
+        document.getElementById("dial").style.visibility = "visible";
+    }
+    else{
 
+        document.getElementById("dial").style.visibility = "hidden";
+    }
 
     function urlparams() {
         var params = {};
@@ -40,7 +52,7 @@
         document.getElementById("container-loading").style.visibility = "hidden";
         document.getElementById("container-float").style.visibility = "hidden";
         document.getElementById("main").style.visibility = "visible";
-
+        document.getElementById("dial").style.visibility = "hidden";
         video_out.innerHTML = '';
         video_out.appendChild(session.video);
 
@@ -67,6 +79,18 @@
         document.getElementById("container-loading").style.visibility = "hidden";
         document.getElementById("container-float").style.visibility = "visible";
         document.getElementById("main").style.visibility = "hidden";
+        if(usertype=="assistant"){
+        user.innerHTML = ',There are no Pending Calls!!';
+        document.getElementById("dial").style.visibility = "hidden";
+    }
+    else if(usertype=="customer"){
+        user.innerHTML = ',How can I help u?';
+        document.getElementById("dial").style.visibility = "visible";
+    }
+    else{
+
+        document.getElementById("dial").style.visibility = "hidden";
+    }
     }
 
     function set_icon(icon) {
@@ -108,7 +132,7 @@
         PUBNUB.bind('mousedown,touchstart', PUBNUB.$('hangup'), function() {
             console.log("pressed end");
             
-        document.getElementById("container-loading").style.visibility = "hidden";
+            document.getElementById("container-loading").style.visibility = "hidden";
         document.getElementById("container-float").style.visibility = "visible";
         document.getElementById("main").style.visibility = "hidden";
         phone.hangup();
