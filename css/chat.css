@@ -1,0 +1,126 @@
+.button {
+	margin-left: 40%;
+}
+.container{
+	position:relative;
+}
+.btn{
+margin-left: 25%;
+}
+
+.box-shadow {
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.container-float{
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	margin-top: 10%;	
+}
+.container-loading{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+	margin-top: 10%;	
+}
+#display-text{
+    font-size: 4em;
+    line-height: 180px;
+    font-weight: 100;
+}
+.remaining{
+    font-size: 4em;
+    line-height: 180px;
+    font-weight: 100;
+}
+
+#endcall{
+  width: 100%;
+  text-align: center;
+}
+
+
+.btn-login {
+ -webkit-border-radius: 2;
+ -moz-border-radius: 2;
+ border-radius: 2px;
+ -webkit-box-shadow: 0px 1px 5px #666666
+;
+ -moz-box-shadow: 0px 1px 5px #666666
+;
+ box-shadow: 0px 1px 5px #666666
+;
+ font-family: Arial;
+ color: #ffffff
+;
+ font-size: 20px;
+ background: rgba(13,201,167,1);
+ padding: 14px 34px;
+ text-decoration: none;
+ border: none;
+ width: 280px;
+ margin-left: 35px;
+ margin-top: 25px;
+}
+
+.btn-login:active {
+ background: #00BFA5;
+ text-decoration: none;
+ border: none;
+} 
+
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #2979FF;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}

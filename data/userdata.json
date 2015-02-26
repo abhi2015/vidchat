@@ -1,0 +1,43 @@
+{
+	"pub_key" : "pub-c-bf7bba68-a1f7-40f1-b990-bd1c6acb18d5",
+	"sub_key" : "sub-c-8626f408-b673-11e4-b68c-0619f8945a4f",
+	
+	"users" : [{
+		"type" : "assistant",
+		"username" : "Satty",
+		"password" : "1",
+		"phone_no" : "assistant101"
+	},
+	{
+		"type" : "assistant",
+		"username" : "Abhimanyu",
+		"password" : "2",
+		"phone_no" : "assistant202"
+	},
+	{
+		"type" : "assistant",
+		"username" : "Akshit",
+		"password" : "3",
+		"phone_no" : "assistant303"
+	},
+	{
+		"type" : "customer",
+		"username" : "Niket",
+		"password" : "4",
+		"phone_no" : "customer101"
+	},
+	{
+		"type" : "customer",
+		"username" : "Suman",
+		"password" : "5",
+		"phone_no" : "customer202"
+	},
+	{
+		"type" : "customer",
+		"username" : "Nidhi",
+		"password" : "6",
+		"phone_no" : "customer303"
+	}
+
+	]
+}

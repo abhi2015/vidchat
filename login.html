@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aahvan</title>
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/login.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <i class="fa fa-inr fa-3x"></i>
+        </div>
+        <h1>Aahvan</h1>
+
+        <form>
+            <div class="group">
+                <input type="text" id="user" required>
+                <span class="bar"></span>
+                <label>Username</label>
+            </div>
+            <div class="group">
+                <input type="password" id="pass1" required>
+                <span class="bar"></span>
+                <label>Password</label>
+            </div>
+            <input type="button" onclick="login(this.form)" value="Login" class="btn btn-login" />
+        </form>
+    </div>
+</body>
+
+</html>

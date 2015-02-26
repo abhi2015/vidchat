@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>Chat App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/chat.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,900italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="import" href="bower_components/bootstrap-elements.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-float" id="container-float">
+        <span id="display-text"></span><span class="remaining">, how can we help you?</span>
+        <br>
+        <button id="dial" class="btn btn-login">&nbsp;&nbsp;Call Assistant&nbsp;&nbsp;</button>
+    </div>
+
+    <div class="container-loading" id="container-loading">
+        <div id="loading">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div> <span class="remaining">Calling Assistant...</span>
+
+        </div>
+    </div>
+
+    <div class="container" id="main">
+        <div class="row">
+            <div id="my-number-section" class="text-center name">
+                <div id="my-number"></div>
+
+            </div>
+            <div class="col-md-4 box-shadow" id="chatbox">
+                <div id="pubnub-chat-section" class="text-center">
+
+                    <div id="pubnub-chat-output"></div>
+                    <input id="pubnub-chat-input" type="text" placeholder="chat here">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="video-border">
+                    <div class="pubnub-relative">
+                        <div id="video-self"></div>
+                    </div>
+                    <div id="video-display">
+                        <span class="glyphicon glyphicon-flash"></span>
+                    </div>
+                    <div id="phone"><span>&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row" id="endcall">
+                <button id="hangup" class="btn btn-danger">&nbsp;&nbsp;End call&nbsp;&nbsp;</button>
+            </div>
+        
+    </div>
+
+
+    <script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+    <script src="js/webrtc.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
