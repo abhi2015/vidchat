@@ -4,7 +4,7 @@
 	
 	"users" : [{
 		"type" : "assistant",
-		"username" : "Satty",
+		"username" : "assistant1",
 		"password" : "1",
 		"phone_no" : "assistant101"
 	},
@@ -34,7 +34,7 @@
 	},
 	{
 		"type" : "customer",
-		"username" : "Nidhi",
+		"username" : "Satty",
 		"password" : "6",
 		"phone_no" : "customer303"
 	}
