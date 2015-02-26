@@ -10,11 +10,11 @@
     my_name.innerHTML = 'Hi ' + urlargs[2];
     var usertype = urlargs[3];
     if(usertype=="assistant"){
-        user.innerHTML = ',There are no Pending Calls!!';
+        user.innerHTML = ',there are no pending calls.';
         document.getElementById("dial").style.visibility = "hidden";
     }
     else if(usertype=="customer"){
-        user.innerHTML = ',How can I help u?';
+        user.innerHTML = ',how can I help you?';
         document.getElementById("dial").style.visibility = "visible";
     }
     else{
